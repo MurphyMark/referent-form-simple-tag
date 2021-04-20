@@ -87,8 +87,7 @@ def write_file(file_name: str, soup: BeautifulSoup):
         output_file.write(soup_text)  # Write it
 
 
-if __name__ == '__main__':
-    tag_files = list()
+if __name__ == '__main__':  # Runs the program. Python convention.
     for file_path in INPUT_FILES:  # Go through all the bak_input files
         with file_path.open(encoding='utf-8') as file:  # encoding='utf-8' is so it doesn't break on certain .exb files
             file_soup = BeautifulSoup(file, features='html.parser')  # Parse an .exb file
