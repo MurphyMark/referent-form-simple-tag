@@ -3,6 +3,16 @@
 This program goes through .exb files in the input/ folder, and adds the tag 'simple' to empty ref-mod cells with corresponding ref-form cells.
 Check the files in the input/ and output/ folders for examples.
 
+## Libraries
+
+This program uses the library beautifulsoup4.
+If you load the repository in Pycharm, you should be able to add the library automatically.
+If you're using something else, you might need to add the library in pip or something. Let me know if you need help with that.
+
+
+Documentation is [here](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), but I think it's a little confusing.
+You probably just need to call BeautifulSoup() on the file like I did in the main function, and then pass that object to the util functions.
+
 ## Structure
 
 The program starts at the bottom of `simple_tag.py`, at the line `if __name__ == '__main__':`
